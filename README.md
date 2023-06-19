@@ -2,14 +2,14 @@
 
 ## Screenshots
 
-![preview img](/preview.png)
+![preview img](/webInt.png )
 
 ## Run Locally
 
 Clone the project
 
 ```bash
-  git clone https://github.com/abdulaziz-m5u/ecommerce-youtube.git project-name
+ git clone https://github.com/Abdelalib/PFF.git
 ```
 
 Go to the project directory

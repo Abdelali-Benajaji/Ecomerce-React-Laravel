@@ -141,12 +141,16 @@ const Checkout = () => {
                 return null;
             });
     };
+    const placeOrders = () => {
+        // Handle form submission here, e.g., redirect to PayPal login page
+        window.location.href = `https://www.paypal.com/login`;
+      };
 
     return (
         <>
             <div className="checkout__htmlForm">
                 <h4 className="mb-5">Billing Details</h4>
-                <form onSubmit={placeOrder}>
+                <form onSubmit={placeOrders}>
                     <div className="row">
                         <div className="col-lg-8 col-md-6">
                             <div className="row">
@@ -165,7 +169,7 @@ const Checkout = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="checkout__input">
+                            {/* <div className="checkout__input">
                                 <p>
                                     Province<span>*</span>
                                 </p>
@@ -238,7 +242,7 @@ const Checkout = () => {
                                         );
                                     })}
                                 </select>
-                            </div>
+                            </div> */}
                             <div className="checkout__input">
                                 <p>
                                     Address<span>*</span>
@@ -349,9 +353,9 @@ const Checkout = () => {
                                         Loading....
                                     </button>
                                 ) : (
-                                    <button type="submit" className="site-btn">
+                                    <a href="https://www.paypal.com/signin"><button  className="site-btn">
                                         PLACE ORDER
-                                    </button>
+                                    </button></a>
                                 )}
                             </div>
                         </div>

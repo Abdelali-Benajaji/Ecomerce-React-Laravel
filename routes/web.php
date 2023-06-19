@@ -12,6 +12,21 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Http\Request;
+use App\Mail\ContactEmail;
+
+Route::post('/send-email', function (Request $request) {
+    $name = $request->input('name');
+    $email = $request->input('email');
+    $message = $request->input('message');
+
+    // Send email
+    Mail::to('abdelalibenajaji@gmail.com')->send(new ContactEmail($name, $email, $message));
+
+    // Return a response or redirect as needed
+    return redirect()->back()->with('success', 'Email sent successfully!');
+})->name('sendEmail');
 
 
 
@@ -21,12 +36,15 @@ Route::get('/shop/{slug?}', [\App\Http\Controllers\ShopController::class, 'index
 Route::get('/shop/tag/{slug?}', [\App\Http\Controllers\ShopController::class, 'tag'])->name('shop.tag');
 Route::get('/product/{product:slug}', [\App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
 
+
 // react route
 Route::get('products/{slug?}', [\App\Http\Controllers\ShopController::class, 'getProducts']);
 Route::get('products', [\App\Http\Controllers\HomeController::class, 'getProducts']);
+
 Route::get('product-detail/{product:slug}', [\App\Http\Controllers\ProductController::class, 'getProductDetail']);
 Route::post('carts', [\App\Http\Controllers\CartController::class, 'store']);
 Route::get('carts', [\App\Http\Controllers\CartController::class, 'showCart']);
+Route::get('/contact', [\App\Http\Controllers\BlogController::class, 'index'])->name('contact.index');
 // ongkir
 Route::get('api/provinces', [\App\Http\Controllers\OngkirController::class, 'getProvinces']);
 Route::get('api/cities', [\App\Http\Controllers\OngkirController::class, 'cities']);

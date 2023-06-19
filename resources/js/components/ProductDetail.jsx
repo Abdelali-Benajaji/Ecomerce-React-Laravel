@@ -141,9 +141,7 @@ const ProductDetail = () => {
                                         ADD TO CARD
                                     </button>
                                 </form>
-                                <a href="#" className="heart-icon">
-                                    <span className="icon_heart_alt"></span>
-                                </a>
+                                
                                 <ul>
                                     <li>
                                         <b>Weight</b>{" "}

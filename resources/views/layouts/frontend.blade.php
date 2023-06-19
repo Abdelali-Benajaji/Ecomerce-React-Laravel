@@ -39,9 +39,7 @@
       </div>
       <div class="humberger__menu__cart">
         <ul>
-          <li>
-            <a href="#"><i class="fa fa-heart"></i> <span>1</span></a>
-          </li>
+          
           <li>
             <a href="#"><i class="fa fa-shopping-bag"></i> <span>{{ $cartCount }}</span></a>
           </li>
@@ -64,9 +62,7 @@
               <a href=""><i class="fa fa-user"></i> {{ auth()->user()->username }}</a>
             </div>
             <span class="arrow_carrot-down"></span>
-            <ul>
-              <li><a href="#">Profile</a></li>
-            </ul>
+            
           </div>
           <div class="header__top__right__auth" style="margin-left: 20px">
             <a href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit();"><i class="fa fa-user"></i> Logout</a>
@@ -90,6 +86,7 @@
             </ul>
           </li>
           <li><a href="#">Contact</a></li>
+          <li><a href="http://localhost:3000/">blog</a></li>
         </ul>
       </nav>
       <div id="mobile-menu-wrap"></div>
@@ -101,7 +98,7 @@
       </div>
       <div class="humberger__menu__contact">
         <ul>
-          <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+          <li><i class="fa fa-envelope"></i> cosmitik@gmail.com</li>
           <li>Free Shipping for all Order of $99</li>
         </ul>
       </div>
@@ -116,8 +113,20 @@
             <div class="col-lg-6 col-md-6">
               <div class="header__top__left">
                 <ul>
-                  <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
-                  <li>Free Shipping for all Order of $99</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16" className='ico1'>
+            <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+            <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+          </svg></li>
+                  <li>Dermatologist Approved</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16" className='ico2'>
+            <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+          </svg></li>
+                  <li>Free national Shipping On Orders 500MAD+</li>
+                  <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16" className='ico4'>
+            <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"/>
+            <path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"/>
+          </svg></li>
+                  <li>service.client@gmail.com</li>
                 </ul>
               </div>
             </div>
@@ -144,9 +153,7 @@
                     ><i class="fa fa-user"></i> {{ auth()->user()->username }}</a
                   >
                   <span class="arrow_carrot-down"></span>
-                  <ul>
-                    <li><a href="#">Profile</a></li>
-                  </ul>
+                  
                 </div>
                 <div class="header__top__right__auth">
                   <a href="#" onclick="event.preventDefault();document.getElementById('logout-form').submit()"><i class="fa fa-user"></i> Logout</a>
@@ -176,7 +183,8 @@
                     @endforeach
                   </ul>
                 </li>
-                <li><a href="#" >Contact US</a></li>
+                <li><a href="{{ route('contact.index') }}" >Contact US</a></li>
+                <li><a href="http://localhost:3000/" >Blog</a></li>
               </ul>
             </nav>
           </div>
@@ -188,9 +196,7 @@
           <div class="col-lg-3">
             <div class="header__cart">
               <ul>
-                <li>
-                  <a href="#"><i class="fa fa-heart"></i> <span>1</span></a>
-                </li>
+                
                 <li>
                   <a href="{{ route('cart.index') }}"
                     ><i class="fa fa-shopping-bag"></i> <span>{{ $cartCount }}</span></a
@@ -225,7 +231,7 @@
                   <i class="fa fa-phone"></i>
                 </div>
                 <div class="hero__search__phone__text">
-                  <h5>+65 11.188.888</h5>
+                  <h5>+212 7.72.34.74.88</h5>
                   <span>support 24/7 time</span>
                 </div>
               </div>
@@ -248,16 +254,17 @@
                 <a href="./index.html"><img src="{{ asset('frontend/img/logo.png') }}" alt="" /></a>
               </div>
               <ul>
-                <li>Address: 60-49 Road 11378 New York</li>
-                <li>Phone: +65 11.188.888</li>
-                <li>Email: hello@colorlib.com</li>
+                <li>Address: Centre Mix Hay Nahda , Rabat</li>
+                <li>Phone: +212 7.72.34.74.88</li>
+                <li>Email: cosmitik@gmail.com</li>
               </ul>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
             <div class="footer__widget">
-              <h6>Useful Links</h6>
-              <ul>
+              <h6>OFPPT CFHN RABAT</h6>
+              <a href="/ofppt.ma"><img src="{{ asset('frontend/img/ofppt.png') }}" alt="" /></a>
+              <!-- <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">About Our Shop</a></li>
                 <li><a href="#">Secure Shopping</a></li>
@@ -272,7 +279,7 @@
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Innovation</a></li>
                 <li><a href="#">Testimonials</a></li>
-              </ul>
+              </ul> -->
             </div>
           </div>
           <div class="col-lg-4 col-md-12">
@@ -304,9 +311,9 @@
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
-                  All rights reserved | This template is made with
+                  OFPPT Hay Nahda Devlppement Digital Option Web Full Stack 
                   <i class="fa fa-heart" aria-hidden="true"></i> by
-                  <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                  <a href="https://colorlib.com" target="_blank">DEVOWF202</a>
                   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </p>
               </div>

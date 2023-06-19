@@ -32,7 +32,7 @@ const ProductList = () => {
             {loading ? (
                 <h2>Loading...</h2>
             ) : products.length === 0 ? (
-                <h3>Not Found !</h3>
+                <h3>No Product Found !</h3>
             ) : (
                 products.map((product, index) => {
                     return (
@@ -48,11 +48,7 @@ const ProductList = () => {
                                     }}
                                 >
                                     <ul className="featured__item__pic__hover">
-                                        <li>
-                                            <a href="#">
-                                                <i className="fa fa-heart"></i>
-                                            </a>
-                                        </li>
+                                        
                                         <li>
                                             <a
                                                 href="#"
@@ -71,7 +67,7 @@ const ProductList = () => {
                                             {product.name}
                                         </a>
                                     </h6>
-                                    <h5>${product.price}</h5>
+                                    <h5>MAD{product.price}</h5>
                                 </div>
                             </div>
                         </div>

@@ -69,7 +69,7 @@ const Cart = () => {
                                     <h5>{cart.name}</h5>
                                 </td>
                                 <td className="shoping__cart__price">
-                                    ${cart.price}
+                                    MAD{cart.price}
                                 </td>
                                 <td className="shoping__cart__quantity">
                                     <div className="quantity">
@@ -105,7 +105,7 @@ const Cart = () => {
                                     </div>
                                 </td>
                                 <td className="shoping__cart__total">
-                                    ${cart.price * cart.quantity}
+                                    MAD{cart.price * cart.quantity}
                                 </td>
                                 <td className="shoping__cart__item__close">
                                     <span
@@ -132,7 +132,7 @@ const Cart = () => {
                                     <th className="shoping__product">
                                         Products
                                     </th>
-                                    <th>Price</th>
+                                    <th>Prix</th>
                                     <th>Quantity</th>
                                     <th>Total</th>
                                     <th></th>

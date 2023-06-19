@@ -45,9 +45,9 @@
                 data-setbg="{{ $related_product->gallery->first()->getUrl() }}"
               >
                 <ul class="product__item__pic__hover">
-                  <li>
+                  <!-- <li>
                     <a href="#"><i class="fa fa-heart"></i></a>
-                  </li>
+                  </li> -->
                   <li>
                     <a href="#"><i class="fa fa-shopping-cart"></i></a>
                   </li>

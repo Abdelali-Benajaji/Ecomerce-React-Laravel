@@ -121,7 +121,7 @@ const ProductShop = () => {
                                 key={product.id}
                                 className="col-lg-4 col-md-6 col-sm-6"
                             >
-                                <div className="product__item">
+                                <div className="product__item" >
                                     <div
                                         className="product__item__pic"
                                         style={{
@@ -129,11 +129,7 @@ const ProductShop = () => {
                                         }}
                                     >
                                         <ul className="product__item__pic__hover">
-                                            <li>
-                                                <a href="#">
-                                                    <i className="fa fa-heart"></i>
-                                                </a>
-                                            </li>
+                                            
                                             <li>
                                                 <a
                                                     href="#"
